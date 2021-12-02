@@ -1,0 +1,1219 @@
+{
+	"info": {
+		"_postman_id": "f6945d34-2238-4589-b680-8ddcbf3c88d6",
+		"name": "GoRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta  Lista de Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users?&page=20",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Consulta Lista de Usuarios",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users?&page=20",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "page",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:39:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"971700a089205f391ecb344568de266a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=o0b%2FwUsDyxgeD1yXI5QSdxsI3uSezohckxkwCfNzvuQOjUe4ly%2B98WuMOYnnnAqBQbtNSaNnZ9SpT612zRq5cxb%2BfgFOqvYjqlTD%2FQkbTR6yNGM5Mr3oLfwXOzSDRDkB%2BzPGi3vjZv7U%2BioPpP9NxHv%2F1jFb42kx0%2BnNF5h6uUqj8dKuhvhOXY3NRulBnhTmvpwgRXXYlHN%2FOdeaVegH8GpaAtcKjGqGepJyjTKiGPif02RL%2FEtqj6EBSueKRFHIUEkTHqFdqJF4bvdZJfXEwu0W6IjmQN%2BflJYmpOc%3D--yLZpf2%2FuqRvWzaew--wD%2FBtqJupbIjmVKaeklNHQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "94edc0af-dbf4-4138-b5c4-e850421a2500"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015886"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 5207,\n            \"pages\": 261,\n            \"page\": 20,\n            \"limit\": 20,\n            \"links\": {\n                \"previous\": \"https://gorest.co.in/public/v1/users?page=19\",\n                \"current\": \"https://gorest.co.in/public/v1/users?page=20\",\n                \"next\": \"https://gorest.co.in/public/v1/users?page=21\"\n            }\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 392,\n            \"name\": \"Lalita Iyer\",\n            \"email\": \"lalita_iyer@schmitt.co\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 393,\n            \"name\": \"Deeptanshu Mukhopadhyay\",\n            \"email\": \"mukhopadhyay_deeptanshu@powlowski.name\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 394,\n            \"name\": \"Meghnath Singh\",\n            \"email\": \"singh_meghnath@doyle.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 395,\n            \"name\": \"Ekaksh Abbott\",\n            \"email\": \"abbott_ekaksh@aufderhar.net\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 396,\n            \"name\": \"Chandramauli Talwar\",\n            \"email\": \"chandramauli_talwar@hamill.org\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 397,\n            \"name\": \"Mr. Chitrali Banerjee\",\n            \"email\": \"mr_banerjee_chitrali@kuvalis-pacocha.net\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 398,\n            \"name\": \"Amodini Nambeesan\",\n            \"email\": \"nambeesan_amodini@weissnat.co\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 399,\n            \"name\": \"Kamlesh Menon CPA\",\n            \"email\": \"cpa_menon_kamlesh@hettinger-kassulke.io\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 400,\n            \"name\": \"Deepankar Deshpande\",\n            \"email\": \"deepankar_deshpande@conroy-botsford.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 401,\n            \"name\": \"Abhaya Dubashi DDS\",\n            \"email\": \"abhaya_dubashi_dds@jast-moen.net\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 402,\n            \"name\": \"Bhudeva Achari II\",\n            \"email\": \"achari_ii_bhudeva@tillman-mosciski.co\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 403,\n            \"name\": \"Gajabahu Sethi\",\n            \"email\": \"gajabahu_sethi@dickinson-kemmer.biz\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 404,\n            \"name\": \"Sarala Rana\",\n            \"email\": \"sarala_rana@becker-farrell.io\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 405,\n            \"name\": \"Ms. Vimal Sharma\",\n            \"email\": \"sharma_vimal_ms@dietrich.co\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 406,\n            \"name\": \"Asha Kocchar\",\n            \"email\": \"kocchar_asha@wisoky-dooley.biz\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 407,\n            \"name\": \"Ranjit Pothuvaal DC\",\n            \"email\": \"ranjit_dc_pothuvaal@smith-douglas.io\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 408,\n            \"name\": \"Anjaneya Tandon PhD\",\n            \"email\": \"tandon_phd_anjaneya@schuster.org\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 409,\n            \"name\": \"Bhupen Reddy\",\n            \"email\": \"bhupen_reddy@cremin.org\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 410,\n            \"name\": \"Shantanu Abbott\",\n            \"email\": \"shantanu_abbott@mills-rodriguez.name\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 411,\n            \"name\": \"Prathamesh Mahajan\",\n            \"email\": \"prathamesh_mahajan@ryan.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "CONSULTA EJ ERROR",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users&page=20",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users&page=20"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:40:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Link",
+							"value": "</assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css>; rel=preload; as=style; nopush,</packs/js/application-ff3698c9dbc7c0826e3e.js>; rel=preload; as=script; nopush"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Feature-Policy",
+							"value": "camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'; payment 'none'"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=wIHnQ8gBHnxYqaT0Kptw5WdM%2FRdg5%2BLuJW9H9PJVp8tOh%2BFvwO6J29oRYunc%2FwGH%2F%2FJWp%2Fxqz1ZkmQLLtgYHGytWfLjgMKVPlAguItafvPuK27Fd9S%2F%2FJ%2BRR2VVHXTIEh2Izn49LoOk9587Hz7z8mIAad7xMv5%2F8seKb6raNvN4OgHnAuYFhA6NZfSh7Qf0tNQhqrygX%2FHK4IHVozSzFEkzhSKNRZ5lKQsHUkINSDOF1yutoV7pt5nVWvZZfEdexx%2FMb89phZaJH2T%2BTnTc%2BXmON%2BCbQ3BTLvxQPQc0%3D--UtHYRpTaUGu4teSW--If67Y4ZENZH8WBn%2B8hz%2FWA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "944bd4cf-ec20-4737-be49-040c2047278d"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.006533"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"utf-8\" />\n        <meta content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" name=\"viewport\" />\n        <link href=\"/favicon.ico\" rel=\"icon\" type=\"image/x-icon\" />\n        <title>Page Not Found | GO REST</title>\n        <meta name=\"csrf-param\" content=\"authenticity_token\" />\n        <meta name=\"csrf-token\" content=\"Mb5V_NwiCug-Jd8gI_AMsP5RgpQpQiHWtWjhXdGJ0VXhmg5HCOjURjpnHRNwlrNYC5G2kq_WZt81kPS_EaEgOw\" />\n        <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css\" data-turbolinks-track=\"reload\" />\n        <script src=\"/packs/js/application-ff3698c9dbc7c0826e3e.js\" data-turbolinks-track=\"reload\"></script>\n        <script async=\"true\" crossorigin=\"anonymous\" src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4930099895671899\"></script>\n    </head>\n    <body>\n        <div class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n            <div class=\"container\">\n                <a class=\"navbar-brand\" href=\"/\">\n                    <i class=\"fas fa-exchange-alt\"></i> Go Rest\n                </a>\n                <button aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\" data-target=\"#navbarResponsive\" data-toggle=\"collapse\" type=\"button\">\n                    <span class=\"navbar-toggler-icon\"></span>\n                </button>\n                <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n                    <ul class=\"navbar-nav ml-auto\">\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/chandamama-stories\">\n                                <i class=\"fas fa-cloud-moon\"></i> Chandamama Stories\n                            </a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/rest-console\">\n                                <i class=\"fab fa-linux\"></i> Rest Console\n                            </a>\n                        </li>\n                        <li class=\"nav-item dropdown\">\n                            <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" area=\"expanded false\" href=\"#\">\n                                <i class=\"fas fa-tools\"></i> Tools\n                                <span class=\"caret\"></span>\n                            </a>\n                            <div class=\"dropdown-menu\">\n                                <a class=\"dropdown-item\" href=\"/tools/base64-encode-decode\">Base64 Encode/Decode</a>\n                                <a class=\"dropdown-item\" href=\"/tools/url-encode-decode\">Url Encode/Decode</a>\n                                <a class=\"dropdown-item\" href=\"/tools/gcode-translator\">G-Code Translator</a>\n                            </div>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"/consumer/login\">Login</a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n        <div class=\"container\">\n            <style type=\"text/css\">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style>\n            <div class=\"p-5\">\n                <h1 class=\"text- display-3 mb-3 text-danger\" style=\"font-weight: 900; letter-spacing: 2px;\">\n                    <i class=\"fas fa-ghost mr-3\"></i>HTTP: 404\n                </h1>\n                <h3 class=\"leaad code-text mb-5\">\n                    <code class=\"mb-3\">\n                        <span>this_page</span>.\n                        <em>not_found</em> = true\n                    </code>\n                </h3>\n                <p class=\"lead code-text\">\n                    <code class=\"mb-2\">\n                        <span>if</span>\n                        <b>you_spelt_it_wrong</b>\n                        <br />&nbsp;&nbsp;\n                        <span>then_try_again</span>\n                        <br />\n                    </code>\n                    <code class=\"mb-2\">\n                        <span>elsif \n                            <b>we_screwed_up</b>\n                        </span>\n                        <br />&nbsp;&nbsp;\n                        <em>puts</em>\n                        <i>\"We're really sorry about that.\"</i>\n                        <br/>\n                    </code>\n                    <code class=\"mb-2\">\n                        <span>end</span>\n                    </code>\n                    <code class=\"mb-2\">\n                        <span>redirect_to</span>\n                        <em>home_page_url</em>\n                    </code>\n                </p>\n            </div>\n        </div>\n        <div class=\"container\">\n            <footer class=\"footer mt-5\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">&copy; Go Rest 2021</li>\n                    <li class=\"list-inline-item float-lg-right\">\n                        <a href=\"/privacy-policy\">Privacy Policy</a>\n                    </li>\n                    <li class=\"list-inline-item float-lg-right mr-3\">\n                        <a href=\"/contact-us\">Contact Us</a>\n                    </li>\n                </ul>\n            </footer>\n        </div>\n    </body>\n</html>"
+				},
+				{
+					"name": "Consulta Lista de Usuarios",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users?&page=20",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "page",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:41:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"971700a089205f391ecb344568de266a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=w2lJQX%2BDXf6Mx%2FDpK4guByJUIeFAdrkGmBjXq5zgoxU27X2RMXIgH7mp%2F5rCaCHrxnU2B%2B0azoMV0yXYhvHl7KAbbJI4Tef%2FtqbWhHkyTpS%2FD96CetAyeOPVUEIHmchBjPKaKKLnND27a%2F9UMs1xst%2FePzQWNH0uoKXC9xuGSmthlZqw9Pd%2FbdvK3h9n14t985RFDgRc7IMbyJBN7OesC%2BGJyYlq1t4u3HlctFaGlj1j4UpK%2FMGlZYV7YWMOHZR0J5FyxdPgfPV8h98DEJq1Fr5uWwgLrkxG7K%2B8AzE%3D--hnPpYxB5AbhyLcbh--5VDBSG8FtzvbX2nVTy6t5A%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b9e0188e-17d6-48a0-8111-fd7cf64c7813"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.025712"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 5207,\n            \"pages\": 261,\n            \"page\": 20,\n            \"limit\": 20,\n            \"links\": {\n                \"previous\": \"https://gorest.co.in/public/v1/users?page=19\",\n                \"current\": \"https://gorest.co.in/public/v1/users?page=20\",\n                \"next\": \"https://gorest.co.in/public/v1/users?page=21\"\n            }\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 392,\n            \"name\": \"Lalita Iyer\",\n            \"email\": \"lalita_iyer@schmitt.co\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 393,\n            \"name\": \"Deeptanshu Mukhopadhyay\",\n            \"email\": \"mukhopadhyay_deeptanshu@powlowski.name\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 394,\n            \"name\": \"Meghnath Singh\",\n            \"email\": \"singh_meghnath@doyle.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 395,\n            \"name\": \"Ekaksh Abbott\",\n            \"email\": \"abbott_ekaksh@aufderhar.net\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 396,\n            \"name\": \"Chandramauli Talwar\",\n            \"email\": \"chandramauli_talwar@hamill.org\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 397,\n            \"name\": \"Mr. Chitrali Banerjee\",\n            \"email\": \"mr_banerjee_chitrali@kuvalis-pacocha.net\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 398,\n            \"name\": \"Amodini Nambeesan\",\n            \"email\": \"nambeesan_amodini@weissnat.co\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 399,\n            \"name\": \"Kamlesh Menon CPA\",\n            \"email\": \"cpa_menon_kamlesh@hettinger-kassulke.io\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 400,\n            \"name\": \"Deepankar Deshpande\",\n            \"email\": \"deepankar_deshpande@conroy-botsford.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 401,\n            \"name\": \"Abhaya Dubashi DDS\",\n            \"email\": \"abhaya_dubashi_dds@jast-moen.net\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 402,\n            \"name\": \"Bhudeva Achari II\",\n            \"email\": \"achari_ii_bhudeva@tillman-mosciski.co\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 403,\n            \"name\": \"Gajabahu Sethi\",\n            \"email\": \"gajabahu_sethi@dickinson-kemmer.biz\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 404,\n            \"name\": \"Sarala Rana\",\n            \"email\": \"sarala_rana@becker-farrell.io\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 405,\n            \"name\": \"Ms. Vimal Sharma\",\n            \"email\": \"sharma_vimal_ms@dietrich.co\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 406,\n            \"name\": \"Asha Kocchar\",\n            \"email\": \"kocchar_asha@wisoky-dooley.biz\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 407,\n            \"name\": \"Ranjit Pothuvaal DC\",\n            \"email\": \"ranjit_dc_pothuvaal@smith-douglas.io\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 408,\n            \"name\": \"Anjaneya Tandon PhD\",\n            \"email\": \"tandon_phd_anjaneya@schuster.org\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 409,\n            \"name\": \"Bhupen Reddy\",\n            \"email\": \"bhupen_reddy@cremin.org\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 410,\n            \"name\": \"Shantanu Abbott\",\n            \"email\": \"shantanu_abbott@mills-rodriguez.name\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 411,\n            \"name\": \"Prathamesh Mahajan\",\n            \"email\": \"prathamesh_mahajan@ryan.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "id 395 MODIFICADO",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Romina\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users/395",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users",
+						"395"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "id 392 ANTES DE MODIFICARSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users/392",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users",
+								"392"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:43:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5f26d3de0843b961f18f4db9280f047\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=%2BXbRwFuzr4yFQjMcjo%2B9G%2BJUrif54S%2FmdSHopS6UCr%2Bey6xPgKnkutxdr0sAzgjhjSwJdzeUW16fw0ZWstURDYePe0JO4mOkZJyRBvn2ZkH4SZY3AMjkNuq2ipkUjVQ0pMVCZFDo5cy9EGjuwcu0VZ%2Bwy2vTPYfrM17%2BGt6NDhxILp%2FZRauAc8hyT1hpxCd1lxgMC9r%2BAUAt80oAZBFFdCqwUn4Uihxwk0YgrmXOqe6cXhU12hT%2FvylD42LvmMAsBWE%2F69AJIHCA4Nkz4zH5eGEJxv2roL3UaVFiFRs%3D--SnOdeckHZDDYL142--%2FlOEapyQY8a2Y1o1jad2Pg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e7d0578d-3af9-4c9c-9642-6014267683cf"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.012456"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 392,\n        \"name\": \"Lalita Iyer\",\n        \"email\": \"lalita_iyer@schmitt.co\",\n        \"gender\": \"female\",\n        \"status\": \"inactive\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "ID 405 DELETE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users/405",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users",
+								"405"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:50:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6a8d6959cdbfcf6049e1ac5a945f72bd\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=NnT%2BoYVOEgh9azy2P37aq9UBAAPa%2Fm05QJb8wXohkM3gTEhXzBRoT7DjBh8IFSO0haSD1KpvfVv8cUwL%2BMx%2Bll5xVgkSJAsZJ%2F0Un6xDq95P%2B2TRPoCjs9IjVbUhMRjLE02do3vmiWXOL%2FN3FMoNETI6mvAtZpExpyfh8JPO9ApGMq%2F3bmidRxezGEErMGPoJULTOH6MBez07CChb4K92GB5kIeb8oT874gw6nv4x6t6CzRDqLqG%2Fu0U2B6tnmXFgFeq6pFal9ZSMHVHKgFmYXmKE9KHpUSY21Dus6s%3D--bdMPKCFh8pNUOYuD--hGAjCtUJQHjl4edhZAi%2Faw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "a5a88a0a-7a4d-401a-b8df-3994cae70e81"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.012213"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 405,\n        \"name\": \"Ms. Vimal Sharma\",\n        \"email\": \"sharma_vimal_ms@dietrich.co\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    }\n}"
+				},
+				{
+					"name": "USUARIO 405 ELIMINADO",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users/405",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users",
+								"405"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:52:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=UBkKnDcpy9ZsvdlgO%2BCDORtwYXIhR1ufs25VkVrviZ6YzDSsqlT%2BkLnd%2Brpybnzvrj6oRSIiwM63AnkDigZ50TVa3dn3G%2FOC7pkUYf5ay%2Be%2BIuX5f0txtMpth%2FhKUPq1jsq4DMwGnncWMQ9I7cRFR2BVH8SF%2F6QBF7OPWmTvKMvbTXE6j1nyArEF53%2FfydqLWkxvlJ5Z2vqCTEq1Pohcy3PIzbgBwDklv2OdC%2FFuQv%2FMIWVVIgBB7vfu%2B5euAaHJehqF7yjC%2F4XvHNeCIMsTjHHu6QbTTONTloY4g5c%3D--YA5bbLqtbpBzMsYJ--igqDuVwfpREYplOtun8GyQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "35cc6aef-2379-4a40-8a2e-b5feb996a5c2"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.026515"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "CREAR USUARIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Romina2\",\r\n\"email\": \"romina2@ejemplo.com\",\r\n\"gender\": \"female\",\r\n\"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users/",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "USUARIO CREADO",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Romina2\",\r\n\"email\": \"romina2@ejemplo.com\",\r\n\"gender\": \"female\",\r\n\"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users/",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 00:57:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://gorest.co.in/public/v1/users/6755"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"09a3f4f4c449935f51bdfc3a72a6d3a9\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=XuPaVEbZEFIHRQvk5jyLjHWrVwkkfZp1sm9aGKMQ5xjWJIw0oU6Zs4GkPyvkg227mVnUSIYOgvjyrCMi%2FFKWx2aPvg41wv3QTG97BWKpMIzOCdTV8fBidZGgRr2r%2ByaDU0EnovPb3h52EbwnKSYCH5WTEbOpLfqgcg%2BIY99vk856BWAsmdV45NJAy8sEsuNh%2B5TkGagSUw4x%2F4%2BvGPQHFGWkdxMBeY10OnajgjXsU%2FZ6pRaQNB9xTzyJCb1xTUu7q4%2FFMIX9ugZu1zlIlkh%2F7EMnzUswHWEVA7YMf1M%3D--MQChr2gbVI4%2BkUVM--UrMuU6w2D2mHJXfqTPGVhg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d0b64966-96f1-494d-a29f-f88c3b8a49e1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.017947"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 6755,\n        \"name\": \"Romina2\",\n        \"email\": \"romina2@ejemplo.com\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "SE CONFIRMA USUARIO CREADO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users/6755",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users",
+						"6755"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USAR POST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/posts?&page=1345",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"posts"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": "1345"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "USAR POST",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/posts?&page=1345",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"posts"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "page",
+									"value": "1345"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 01:00:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4872d784600c670af3ac88d46d405cb8\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=gUbWvVgxCcUaGvR29%2FQSfryNc%2FDoQCr%2FhsVX9P3Wd5bhjaAQMAlVVqI0gKSouglKQXX%2F%2FU%2FFyIb2ahJH3292xJlRULknWmXd1U4ScxJ6yxf9herU2uns1Y%2Fuml3Fu8nckn0NJbuXk8gC67ijKBRzngk5meJVR4rdmZOc%2BrPQPiOfZRW0QAlknDpF%2Bwov29WhmwEq7AQ0QEwXQ98w9g5orfh98QKVG%2Bk8RsAHa9BQjmtnfvYVaczH97zHilk18G4rfCtDI4imkifsSPv7kZI1lYc3iEt7TO60zQJ%2BXlk%3D--IFtKshiR1uXE0Og%2F--%2B2SW1qBR2OUhn10dBuxAkA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b1206342-1bf6-4819-b650-447d71bd456c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015717"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 1283,\n            \"pages\": 65,\n            \"page\": 1345,\n            \"limit\": 20,\n            \"links\": {\n                \"previous\": \"https://gorest.co.in/public/v1/posts?page=1344\",\n                \"current\": \"https://gorest.co.in/public/v1/posts?page=1345\",\n                \"next\": null\n            }\n        }\n    },\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "EDITAR POST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "EDITAR POST",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"Edicion hecha en calidad de sw\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/posts/215",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"posts",
+								"215"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Nov 2021 01:03:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"86ea196ab097bcead296ca6dd4e7a767\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=2JfZwxuOGkcqNZtB9DOE8GUpGhPtkv4ySqg4Y%2B9TTfM6b2tWVnHZtGnpt6egdrqJnWOwCWwOPkoEWr4U%2B1u7f8ZwS2RaWqHPRdsqROTy0a8E%2FPtsEYRnbHQbxgzcVI8RoBMDjJGdTNH6BwoeVgSaLmLw3cnaRXQgFlc4xnT0JFmI2Xj5MJLoSy82tnT6vdPfFNgkCkvinTyO44%2BF%2BwQHo%2BygjiadmE6t%2FmfYRQdSemIum154iCn3jZGPiygyAhCUQroQYbxmRWaI611afEWSp2U7tvPsP9i%2Fxgx54V8%3D--MJUeVF1YzGglRL8%2B--3aaDTOFycLUCopNIDZgyEg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "75426b69-0083-43ea-955a-9edf0b22558e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.039556"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": null,\n    \"data\": {\n        \"body\": \"Edicion hecha en calidad de sw\",\n        \"user_id\": 208,\n        \"id\": 215,\n        \"title\": \"Sit curvo theca comis solus suspendo tactus crudelis caput textor.\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
